@@ -17,7 +17,7 @@
 Dans le cadre du projet d’électronique, nous devions créer un escape game composé de trois chambres. Pour notre chambre, nous avons décidé de réaliser un jeu de taquin. Une fois le puzzle résolu, une clef est délivrée. Cette clef est indispensable pour gagner l’escape game.
 
 <p style="text-align:center;">
-  <img src="./taquin.png" alt="Jeu de taquin" style="width:50%;" />
+  <img src="./taquin.png" alt="Jeu de taquin" style="width:30%;" />
 </p>
 
 
@@ -36,7 +36,7 @@ Une fois la bonne combinaison atteinte, un mécanisme intégré permet la **lib�
 # 1-Caméra 
 Pour assurer un suivi en temps réel de la progression du joueur, nous avons utilisé la caméra ESP32-S3 Sense. Ce module caméra joue le rôle de capteur intelligent : il analyse l’état du puzzle à chaque instant et détecte automatiquement lorsque le joueur a correctement résolu le jeu. Une fois le bon agencement reconnu, la caméra déclenche la libération de la clé.
 <p style="text-align:center;">
-  <img src="./ESP32S3.jpg" alt="ESP32S3" style="width:50%;" />
+  <img src="./ESP32S3.jpg" alt="ESP32S3" style="width:30%;" />
 </p>
 Ce choix technologique nous a permis d’ajouter une dimension interactive et autonome à notre chambre d’escape game, tout en intégrant des compétences en traitement d’image, microcontrôleurs et automatisation.
 
