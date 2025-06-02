@@ -76,5 +76,21 @@ Finalement, le système est alimenté par une source de tension de +7.5V, connec
 
 # 5- Modèle 3D
 
+## Taquin 3D
+Nous réalisé un modèle 3D d’un taquin aux dimensions finales de 6 cm sur 6 cm. Chaque pièce du taquin a été conçue avec des rainures et creux de chaques cotés de chaque pièces, permettant un bon encastrement et un coulissement fluide des pièces entre elles. 
+"photo modèoe 3D"
+Initialement, une autre taille avait été envisagée, mais nous avons dû adapter les dimensions du modèle en fonction des contraintes imposées par la caméra utilisée, notamment pour garantir une bonne visibilité et un bon suivi des pièces pendant l’utilisation. 
+"photo finale"
+
+## Système d'éjéction 3D
+Le système d’éjection de clés repose sur un mécanisme à ressorts intégré dans un récipient allongé. Au fond de ce récipient, des clous équitablement répartis servent de support et de guide pour les ressorts, un ressort est inséré dans chaque clou. Une plaque supérieure vient ensuite comprimer ces ressorts, maintenue par un loquet de blocage. Une fois la clé placée au-dessus, ce loquet (relié à un servomoteur) empêche l’éjection tant que le jeu n’est pas terminé. Lorsque l’utilisateur réussit, le servomoteur se déclenche, libère le loquet, et les ressorts se détendent, projetant la clé vers l’extérieur. 
+
+Toutefois, nous n’avons pas réussi à concevoir une solution plus pratique à gérer pour le réalisateur du jeu : en effet, l’éjection entraîne en même temps les ressorts et l’ensemble du mécanisme, rendant le système à usage unique. Il faut donc le reconstituer manuellement entre chaque joueur, ce qui s’avère peu pratique. Pour une prochaine version, il sera essentiel de penser non seulement à la simplicité d’utilisation pour le joueur, mais aussi à la facilité de réinitialisation et de gestion pour la personne du jeu.
+
+# 6- Prototype
+Pour le prototype 3D présenté, nous avons fait le choix, par soucis de clarté et par manque de temps, de réaliser une démonstration hors du cube. Le montage a ainsi été fait de manière simplifiée : nous avons assemblé des planches en bois perpendiculaires entre elles, avec deux longueurs différentes — une plus courte et une plus longue. Sur la planche la plus longue, nous avons installé un système de glissoir permettant d’ajuster manuellement la distance de la caméra afin d’obtenir un cadrage optimal du taquin. 
+
+Cependant, plusieurs problèmes techniques ont émergé, notamment au niveau de l’éclairage : la LED utilisée produisait une lumière brute et non diffuse, provoquant des reflets gênants sur le quadrillage utilisé pour la calibration de la caméra. Ce quadrillage, de dimensions 6 cm par 6 cm et correspondant à la taille réelle du taquin, avait été imprimé sur des feuilles avec différentes couleurs destinées à être détectées par la caméra. Toutefois, ces couleurs étaient trop proches en termes de carnation, ce qui causait des imprécisions dans la détection par l’algorithme de traitement d’image. Une solution plus fiable aurait été d’utiliser, pour chaque case du quadrillage représentant le taquin, un pourcentage unique de blanc et de noir. Grâce à ces contrastes bien marqués, l’algorithme aurait pu identifier chaque case de manière plus précise et constante.
+
 
 
