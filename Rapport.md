@@ -78,13 +78,30 @@ Finalement, le système est alimenté par une source de tension de +7.5V, connec
 
 ### Taquin 3D
 Nous réalisé un modèle 3D d’un taquin aux dimensions finales de 6 cm sur 6 cm. Chaque pièce du taquin a été conçue avec des rainures et creux de chaques cotés de chaque pièces, permettant un bon encastrement et un coulissement fluide des pièces entre elles. 
-"photo modèoe 3D"
+<p style="text-align:center;">
+  <img src="./carcasse creux.png" alt="Contour du taquin (coté avec un "creux" visible)" style="width:30%;" />
+</p>
+
+<p style="text-align:center;">
+  <img src="./carcasse rainure.png" alt="Contour du taquin (coté avec une "rainure" visible)" style="width:30%;" />
+</p>
+
+<p style="text-align:center;">
+  <img src="./piece individuel.png" alt="Une pièce individuelle du taquin (8 au total)" style="width:30%;" />
+</p>
+
 Initialement, une autre taille avait été envisagée, mais nous avons dû adapter les dimensions du modèle en fonction des contraintes imposées par la caméra utilisée, notamment pour garantir une bonne visibilité et un bon suivi des pièces pendant l’utilisation. 
 "photo finale"
 
 ### Système d'éjéction 3D
 Le système d’éjection de clés repose sur un mécanisme à ressorts intégré dans un récipient allongé. Au fond de ce récipient, des clous équitablement répartis servent de support et de guide pour les ressorts, un ressort est inséré dans chaque clou. Une plaque supérieure vient ensuite comprimer ces ressorts, maintenue par un loquet de blocage. Une fois la clé placée au-dessus, ce loquet (relié à un servomoteur) empêche l’éjection tant que le jeu n’est pas terminé. Lorsque l’utilisateur réussit, le servomoteur se déclenche, libère le loquet, et les ressorts se détendent, projetant la clé vers l’extérieur. 
+<p style="text-align:center;">
+  <img src="./carcasse creux.png" alt="Contour du taquin (coté avec un "creux" visible)" style="width:30%;" />
+</p>
 
+<p style="text-align:center;">
+  <img src="./carcasse rainure.png" alt="Contour du taquin (coté avec une "rainure" visible)" style="width:30%;" />
+</p>
 Toutefois, nous n’avons pas réussi à concevoir une solution plus pratique à gérer pour le réalisateur du jeu : en effet, l’éjection entraîne en même temps les ressorts et l’ensemble du mécanisme, rendant le système à usage unique. Il faut donc le reconstituer manuellement entre chaque joueur, ce qui s’avère peu pratique. Pour une prochaine version, il sera essentiel de penser non seulement à la simplicité d’utilisation pour le joueur, mais aussi à la facilité de réinitialisation et de gestion pour la personne du jeu.
 
 # 6- Prototype
