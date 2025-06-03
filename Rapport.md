@@ -20,7 +20,7 @@
 Dans le cadre du projet d’électronique, nous devions créer un escape game composé de trois chambres. Pour notre chambre, nous avons décidé de réaliser un jeu de taquin. Une fois le puzzle résolu, une clef est délivrée. Cette clef est indispensable pour gagner l’escape game.
 
 <p style="text-align:center;">
-  <img src="./taquin.png" alt="Jeu de taquin" style="width:40%;" />
+  <img src=".Images/taquin.png" alt="Jeu de taquin" style="width:40%;" />
 </p>
 
 
