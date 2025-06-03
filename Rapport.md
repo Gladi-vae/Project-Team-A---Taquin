@@ -138,10 +138,10 @@ Le code est disponible sur le github.
 #### Rania:
 Pendant ce projet d’escape game, j’ai surtout appris à créer un PCB, en partant du schéma électrique jusqu’au dessin des connexions. J’ai aussi soudé des composants pour la première fois, ce qui m’a permis de découvrir une étape importante en électronique. J’ai mieux compris comment fonctionnent les capteurs, comment tout connecter correctement, et comment intégrer le circuit dans une structure 3D. En plus de la technique, j’ai appris à travailler avec les autres, à suivre les consignes du projet, à faire des tests pour vérifier que tout marche bien. Ce projet m’a montré que l’électronique peut être amusante et utile, et m’a donné envie d’en apprendre plus.
 
-#### Anya :
+#### Anya:
 Dans ce projet, j’ai appris à anticiper les problèmes qu’on peut rencontrer et à réagir en cas d'imprévu (erreur d'impréssion mauvais design adaptation de design nécéssaire erreur de soudure etc...). J'ai également appris à justifier mes choix, comme une mesure ou une méthode utilisée. Techniquement, ce projet m’a permis d’apprendre à souder des empreintes sur un PCB et à mieux comprendre comment ça fonctionne. J’ai aussi appris à modéliser en 3D et imprimer en 3D. J'ai également appris à utiliser un logiciel 3D mais aussi un logiciel de slicing. En ce qui concerne les erreurs que j'ai réalisé, j'ai surtour compris que la communication est la clef pour l'avancement d'un projet, de plus j'ai aussi compris que j'avais tendance à parfois trop précipité mes explications ce qui pouvais rendre plus difficile l'échange des idées. J’ai commencé à apprendre comment faire une présentation claire pour expliquer mon travail, en suivant la démarche similaire à celle d'un ingénieur, même si tout n’était pas parfait. Enfin j’ai aussi compris l’importance de toujours remettre ce que je fais dans son contexte et de le relier à l’utilité de l’objet que je développe en équipe.
 
-#### Agheles :
+#### Agheles:
 J'ai appris de nombreuses choses durant ce projet dont les plus importantes sont : 
 1 faire l'etude d'un circuit est necessaire pour ne pas se retrouver avec des surprises lors de phases de tests
 2 gérer les delais 
@@ -151,4 +151,13 @@ J'ai appris de nombreuses choses durant ce projet dont les plus importantes sont
 6 savoir organiser son travail et le rendre lisible aux autres est une qualité indspensable 
 7 savoir realiser un projet ambitieux de façon realiste
 Enfin , ce projet fut une experience interressante car même en partant d'un projet compliqué et après de nombreuses erreurs et difficultés avec assez de travail nous avons pu le mener à bout.
+
+#### Victor:
+
+Durant ce projet, j'ai acquis des compétences de gestion principalement.
+
+D'abord dans la partie technique liée à la transposition d'idées en un code fonctionnel. Il y a souvent un gouffre entre ce qu'on pense pouvoir coder et ce qu'on fait réellement. Des choses qui ne sont d'aucune utilité au projet final, comme la visualisation de la photo prise par la caméra pour vérifier dans quel sens est prise la photo, peuvent bloquer (longtemps) l'avancement global du projet. Je pensais initialement que le code de résolution serait le plus complexe à mettre en place, eh bien non : c'est la compréhension de l'environnement et des objets qu'on manipule qui demande le plus de réflexion et de recul (j'ai commandé l'algorithme, il m'a été fourni fonctionnel dans la minute).
+
+Ensuite, j'ai beaucoup appris sur la partie humaine de la gestion de projet. Dans notre cas, le projet a abouti seulement parce que l'on avait un PCB (CB dans notre cas) simple. Sinon, nous aurions été pris par le temps. Savoir structurer, jalonner un projet me semble maintenant vital pour éviter les situations de crise.
+Ce n'était pas prévu, mais j'ai également pu apprendre à souder.
 
