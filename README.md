@@ -1,3 +1,4 @@
-capteur couleur, modele:SEN0212 voici un code arduino pour tester le fonctionnement du capteur 
+Le code du projet se trouve dans le dossier CODE_PROJET.
 
-camera: OV2640 (<15€)
+Le rapport s'appelle Rapport.md
+
