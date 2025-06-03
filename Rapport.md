@@ -112,7 +112,30 @@ Cependant, plusieurs problèmes techniques ont émergé, notamment au niveau de 
 
 # 7- Code
 
-Le choix a été fait de coder en Arduino. En effet, comme nous avons utilisé un ESP32 muni d'une caméra, il était beaucoup plus raisonnable pour un premier projet utilisant cette technologie d'utiliser des librairies existantes, plutôt que de s'acharner à tout recoder/configuré sois-même sur CubeIDE.
-Toutefois cela n'a pas été si évident d'utiliser ces ressources, qui étaient relativement cachées sur un Github. La personne chargée du code a beaucoup appris lors de cette étape, que ce soit pour la compréhension de la structure des projets/librairies disponibles en open source, et sur leur utilisation/implémentation efficace. En effet le jeune programmeur a eu quelques sueurs froides à la lecture des différents librairies comportants des centaines de lignes, mais il a finalement été rassuré quand il a compris qu'un seul appel de fonction faisait opérer la magie.
+Le choix a été fait de coder en Arduino. En effet, comme nous avons utilisé un ESP32 muni d'une caméra, il était beaucoup plus raisonnable, pour un premier projet utilisant cette technologie, d'utiliser des librairies existantes plutôt que de s'acharner à tout recoder/configurer soi-même sur CubeIDE.
+
+Toutefois, cela n'a pas été si évident d'utiliser ces ressources, qui étaient relativement cachées sur un GitHub. La personne chargée du code a beaucoup appris lors de cette étape, que ce soit pour la compréhension de la structure des projets/librairies disponibles en open source, ou sur leur utilisation/implémentation efficace. En effet, le jeune programmeur a eu quelques sueurs froides à la lecture des différentes librairies s'étalant sur des centaines de lignes, mais il a finalement été rassuré quand il a compris qu'un seul appel de fonction faisait opérer la magie.
+
+Après la capture de l'image effectuée avec la commande magique, le premier challenge fut de réussir à visualiser l'image sur l'ordinateur pour s'assurer du bon fonctionnement de la caméra. Pour ce faire, la première solution fut l'utilisation d'une carte SD. Mais cela était pénible, car de la manutention était nécessaire pour faire passer la carte du module à l'ordinateur, et inversement. De plus, l'image était juste créée par magie sans contrôle, donc inexploitable avec un algorithme.
+
+La deuxième piste empruntée a été de récupérer tous les pixels de la photo prise par le module caméra à travers la liaison série. Un challenge est alors survenu : comprendre ce qu'on recevait de la commande magique (des pixels ? quelle taille ? quel format ?...). Le buffer, rempli par la commande magique, était constitué de pixels codés en RGB565, donc sur deux octets. Une conversion en RGB888 a ensuite été réalisée avant de pouvoir enfin reconstituer l'image avec un script Python qui lisait la liaison série. Et là, malheur : les formes de l'image reconstituée correspondaient à la scène prise en photo, mais les couleurs étaient fantastiques. Le programmeur avait en réalité inversé le MSB et le LSB dans sa traduction bits to RGB565.
+
+Une fois l'image visible (après pas mal de temps), le code de détection des couleurs a pu voir le jour. Pour détecter les différentes pièces du Taquin, qui possèdent chacune d'elles une couleur différente et un numéro associé sur l'autre face, on a sélectionné 9 zones de l'image (bien choisies au centre de chacune des pièces) dont on a calculé la moyenne RGB pour obtenir une couleur, qu'on a elle-même comparée (calcul de distance en 3D) avec le tableau qui associe les couleurs/numéros véridiques de chaque pièce du Taquin. Ainsi, on obtient en théorie une matrice 3×3 remplie de numéros allant de 1 à 9 représentant la configuration du Taquin.
+
+Les tests pratiques ont révélé que la luminosité et le positionnement de la caméra influaient beaucoup sur la qualité de l'image. On pouvait donc se retrouver avec plusieurs couleurs confondues avec une autre, et donc avoir une même pièce du Taquin à plusieurs endroits en même temps du point de vue de l'ESP32. Le blanc et le noir étaient très bien reconnus, tandis que l’orange et le cyan l’étaient moins, par exemple. Une piste d'amélioration évidente serait d'utiliser uniquement les couleurs/teintes avec le meilleur taux de reconnaissance, et de faire des motifs sur chaque pièce pour les différencier.
+
+Le reste du code du projet a pu être ensuite déroulé rapidement :
+
+- La résolution du jeu de Taquin : une fonction a été codée pour trouver le prochain coup à jouer (elle prend en paramètre la configuration et renvoie le numéro de la pièce à jouer). Elle utilise un algorithme de type A* avec une heuristique standard. C'est bien plus efficace qu'une approche gloutonne.
+
+- L'écran : affichage classique, pas de difficulté particulière.
+
+- Le code Morse : lorsque le joueur appuie deux fois rapidement sur le bouton poussoir, il entre dans le mode morse. Il peut ainsi entrer le code qui se dévoile une fois le Taquin résolu. Le challenge a été de bien gérer la reconnaissance d'appui pour différencier les deux modes disponibles : un appui permet de prendre une photo et de donner une indication au joueur sur l'écran, alors que deux appuis permettent d'entrer dans le mode morse. Le choix a été fait, pour parvenir à un code fonctionnel dans le temps imparti, de coder un code morse d'une séquence, et non de plusieurs lettres.
+
+- Le servomoteur: Le servomoteur est déclenché lorsque le joueur entre le bon code morse dans le mode Morse.
+
+En somme toutes les fonctionnalités attendues au départ étaient fonctionnelles. Seulement la précision de la reconnaissance des couleurs est à améliorer, même si sur le principe et pour une majorité de couleurs bien éclairées, la reconnaissance s'effectue correctement.
+Le code est disponible sur le github.
+
 
 
