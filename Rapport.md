@@ -13,6 +13,7 @@
 ### 4- Led
 ### 5- Modèle 3D
 ### 6- Prototype
+### 7- Code
 ### Conclusion
 ### Bilan
 # Introduction 
@@ -109,5 +110,9 @@ Pour le prototype 3D présenté, nous avons fait le choix, par soucis de clarté
 
 Cependant, plusieurs problèmes techniques ont émergé, notamment au niveau de l’éclairage : la LED utilisée produisait une lumière brute et non diffuse, provoquant des reflets gênants sur le quadrillage utilisé pour la calibration de la caméra. Ce quadrillage, de dimensions 6 cm par 6 cm et correspondant à la taille réelle du taquin, avait été imprimé sur des feuilles avec différentes couleurs destinées à être détectées par la caméra. Toutefois, ces couleurs étaient trop proches en termes de carnation, ce qui causait des imprécisions dans la détection par l’algorithme de traitement d’image. Une solution plus fiable aurait été d’utiliser, pour chaque case du quadrillage représentant le taquin, un pourcentage unique de blanc et de noir. Grâce à ces contrastes bien marqués, l’algorithme aurait pu identifier chaque case de manière plus précise.
 
+# 7- Code
+
+Le choix a été fait de coder en Arduino. En effet, comme nous avons utilisé un ESP32 muni d'une caméra, il était beaucoup plus raisonnable pour un premier projet utilisant cette technologie d'utiliser des librairies existantes, plutôt que de s'acharner à tout recoder/configuré sois-même sur CubeIDE.
+Toutefois cela n'a pas été si évident d'utiliser ces ressources, qui étaient relativement cachées sur un Github. La personne chargée du code a beaucoup appris lors de cette étape, que ce soit pour la compréhension de la structure des projets/librairies disponibles en open source, et sur leur utilisation/implémentation efficace. En effet le jeune programmeur a eu quelques sueurs froides à la lecture des différents librairies comportants des centaines de lignes, mais il a finalement été rassuré quand il a compris qu'un seul appel de fonction faisait opérer la magie.
 
 
