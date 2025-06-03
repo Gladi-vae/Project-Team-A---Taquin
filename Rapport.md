@@ -134,6 +134,8 @@ Le reste du code du projet a pu être ensuite déroulé rapidement :
 
 En somme toutes les fonctionnalités attendues au départ étaient fonctionnelles. Seulement la précision de la reconnaissance des couleurs est à améliorer, même si sur le principe et pour une majorité de couleurs bien éclairées, la reconnaissance s'effectue correctement.
 Le code est disponible sur le github.
-
+### Bilan
+## Rania:
+Pendant ce projet d’escape game, j’ai surtout appris à créer un PCB, en partant du schéma électrique jusqu’au dessin des connexions. J’ai aussi soudé des composants pour la première fois, ce qui m’a permis de découvrir une étape importante en électronique. J’ai mieux compris comment fonctionnent les capteurs, comment tout connecter correctement, et comment intégrer le circuit dans une structure 3D. En plus de la technique, j’ai appris à travailler avec les autres, à suivre les consignes du projet, à faire des tests pour vérifier que tout marche bien. Ce projet m’a montré que l’électronique peut être amusante et utile, et m’a donné envie d’en apprendre plus.
 
 
