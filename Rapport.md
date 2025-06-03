@@ -141,4 +141,14 @@ Pendant ce projet d’escape game, j’ai surtout appris à créer un PCB, en pa
 #### Anya :
 Dans ce projet, j’ai appris à anticiper les problèmes qu’on peut rencontrer et à réagir en cas d'imprévu (erreur d'impréssion mauvais design adaptation de design nécéssaire erreur de soudure etc...). J'ai également appris à justifier mes choix, comme une mesure ou une méthode utilisée. Techniquement, ce projet m’a permis d’apprendre à souder des empreintes sur un PCB et à mieux comprendre comment ça fonctionne. J’ai aussi appris à modéliser en 3D et imprimer en 3D. J'ai également appris à utiliser un logiciel 3D mais aussi un logiciel de slicing. En ce qui concerne les erreurs que j'ai réalisé, j'ai surtour compris que la communication est la clef pour l'avancement d'un projet, de plus j'ai aussi compris que j'avais tendance à parfois trop précipité mes explications ce qui pouvais rendre plus difficile l'échange des idées. J’ai commencé à apprendre comment faire une présentation claire pour expliquer mon travail, en suivant la démarche similaire à celle d'un ingénieur, même si tout n’était pas parfait. Enfin j’ai aussi compris l’importance de toujours remettre ce que je fais dans son contexte et de le relier à l’utilité de l’objet que je développe en équipe.
 
+#### Agheles :
+J'ai appris de nobreuses choses durant ce projet dont les plus importantes sont : 
+1 faire l'etude d'un circuit est necessaire pour ne pas se retrouver avec des surprises lors de phases de tests
+2 gérer les delais 
+3 savoir rebondir suite aux imprevus 
+4 avoir une présentation soignée et travaillée est aussi important que la partie plus technique du projet 
+5 avoir une bonne communication avec les autres membres du groupe est primordial 
+6 savoir organiser son travail et le rendre lisible aux autres est une qualité indspensable 
+7 savoir realiser un projet ambitieux de façon realiste
+Enfin , ce projet fut une experience interressante car même en partant d'un projet compliqué et après de nombreuses erreurs et difficultés avec assez de travail nous avons pu le mener à bout.
 
