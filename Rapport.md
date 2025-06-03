@@ -35,9 +35,7 @@ Notre dispositif est composé de plusieurs couches :
 - Enfin, la **structure du jeu de taquin en 3D** est positionnée au-dessus de l’ensemble.
 
 Une fois la bonne combinaison atteinte, un mécanisme intégré permet la **libération automatique de la clé**, constituant ainsi la récompense et la progression vers la salle suivante.
-<p style="text-align:center;">
-  <img src="./AI.png" alt="AI" style="width:30%;" />
-</p>
+
 
 # 1-Caméra 
 Pour assurer un suivi en temps réel de la progression du joueur, nous avons utilisé la caméra ESP32-S3 Sense. Ce module caméra joue le rôle de capteur intelligent : il analyse l’état du puzzle à chaque instant et détecte automatiquement lorsque le joueur a correctement résolu le jeu. Une fois le bon agencement reconnu, la caméra déclenche la libération de la clé.
