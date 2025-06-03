@@ -9,12 +9,9 @@
 ###  Introduction 
 ### 1- Caméra 
 ### 2- PCB
-### 3- Ecran
-### 4- Led
-### 5- Modèle 3D
-### 6- Prototype
-### 7- Code
-### Conclusion
+### 3- Modèle 3D
+### 4- Prototype
+### 5- Code
 ### Bilan
 # Introduction 
 Dans le cadre du projet d’électronique, nous devions créer un escape game composé de trois chambres. Pour notre chambre, nous avons décidé de réaliser un jeu de taquin. Une fois le puzzle résolu, une clef est délivrée. Cette clef est indispensable pour gagner l’escape game.
@@ -73,7 +70,7 @@ Finalement, le système est alimenté par une source de tension de +7.5V, connec
   <img src="Images/RG.png" alt="RG" style="width:30%;" />
 </p>
 
-# 5- Modèle 3D
+# 3- Modèle 3D
 
 ### Taquin 3D
 Nous réalisé un modèle 3D d’un taquin aux dimensions finales de 6 cm sur 6 cm. Chaque pièce du taquin a été conçue avec des rainures et creux de chaques cotés de chaque pièces, permettant un bon encastrement et un coulissement fluide des pièces entre elles. 
@@ -99,7 +96,7 @@ Le système d’éjection de clés repose sur un mécanisme à ressorts intégr�
 
 Toutefois, nous n’avons pas réussi à concevoir une solution plus pratique à gérer pour le réalisateur du jeu : en effet, l’éjection entraîne en même temps les ressorts et l’ensemble du mécanisme, rendant le système à usage unique. Il faut donc le reconstituer manuellement entre chaque joueur, ce qui s’avère peu pratique. Pour une prochaine version, il sera essentiel de penser non seulement à la simplicité d’utilisation pour le joueur, mais aussi à la facilité de réinitialisation et de gestion pour la personne du jeu.
 
-# 6- Prototype
+# 4- Prototype
 Pour le prototype 3D présenté, nous avons fait le choix, par soucis de clarté et par manque de temps, de réaliser une démonstration hors du cube. Le montage a ainsi été fait de manière simplifiée : nous avons assemblé des planches en bois perpendiculaires entre elles, avec deux longueurs différentes — une plus courte et une plus longue. Sur la planche la plus longue, nous avons installé un système de glissoir permettant d’ajuster manuellement la distance de la caméra afin d’obtenir un cadrage optimal du taquin. 
 
 <p style="text-align:center;">
@@ -108,7 +105,7 @@ Pour le prototype 3D présenté, nous avons fait le choix, par soucis de clarté
 
 Cependant, plusieurs problèmes techniques ont émergé, notamment au niveau de l’éclairage : la LED utilisée produisait une lumière brute et non diffuse, provoquant des reflets gênants sur le quadrillage utilisé pour la calibration de la caméra. Ce quadrillage, de dimensions 6 cm par 6 cm et correspondant à la taille réelle du taquin, avait été imprimé sur des feuilles avec différentes couleurs destinées à être détectées par la caméra. Toutefois, ces couleurs étaient trop proches en termes de carnation, ce qui causait des imprécisions dans la détection par l’algorithme de traitement d’image. Une solution plus fiable aurait été d’utiliser, pour chaque case du quadrillage représentant le taquin, un pourcentage unique de blanc et de noir. Grâce à ces contrastes bien marqués, l’algorithme aurait pu identifier chaque case de manière plus précise.
 
-# 7- Code
+# 5- Code
 
 Le choix a été fait de coder en Arduino. En effet, comme nous avons utilisé un ESP32 muni d'une caméra, il était beaucoup plus raisonnable, pour un premier projet utilisant cette technologie, d'utiliser des librairies existantes plutôt que de s'acharner à tout recoder/configurer soi-même sur CubeIDE.
 
