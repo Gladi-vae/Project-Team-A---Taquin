@@ -53,9 +53,6 @@ This project was developed as part of a **team engineering assignment**, with ea
 <img src="Images/taquin.png" alt="Puzzle Layout" width="400"/>
 <img src="Images/ESP32S3.jpg" alt="ESP32 Microcontroller" width="300"/>
 
-## 📜 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ## 🚀 Future Enhancements
 
